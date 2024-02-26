@@ -17,3 +17,22 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+fonts:
+  - family: Raleway
+    fonts:
+      - assets: assets/fonts/Raleway-Black.ttf 
+        weight: 900
+      - assets: assets/fonts/Raleway-Bold.ttf 
+        weight: 700
+      - assets: assets/fonts/Raleway-Regular.ttf 
+  - family: RobotoCondensed
+    fonts:
+      - assets: assets/fonts/RobotoCondensed-Bold.ttf 
+        weight: 700
+      - assets: assets/fonts/RobotoCondensed-Light.ttf 
+        weight: 300
+      - assets: assets/fonts/RobotoCondensed-Regular.ttf 
+      - assets: assets/fonts/RobotoCondensed-Italic.ttf 
+        style: italic
+    

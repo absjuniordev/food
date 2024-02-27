@@ -9,6 +9,7 @@ class FoodItem extends StatelessWidget {
   });
 
   final Food food;
+  
   void _selectMeal(BuildContext context) {
     Navigator.of(context).pushNamed(
       AppRoutes.FOOD_DETAIL,

@@ -4,6 +4,7 @@ import 'package:food/utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem(this.category, {super.key});
+  
   final Category category;
 
   void _selectedCategory(BuildContext context) {

@@ -19,7 +19,7 @@ class CategoriesFoodScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(category.title),
+        title: Text(category.title)
       ),
       body: ListView.builder(
         itemCount: categoryFood.length,

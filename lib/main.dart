@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food/screens/Categories_screen.dart';
+import 'package:food/screens/food_details_screen.dart';
 
 import 'screens/categories_food_screen.dart';
 import 'utils/app_routes.dart';
@@ -27,11 +28,20 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'RobotoCondensed',
               ),
             ),
+        appBarTheme: const AppBarTheme(
+          color: Colors.pink,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
-      
       routes: {
         AppRoutes.HOME: (_) => const CategoriesScreen(),
         AppRoutes.CATEGORIES_FOOD: (_) => const CategoriesFoodScreen(),
+        AppRoutes.FOOD_DETAIL: (_) => const FoodDetailsScreen(),
       },
     );
   }

@@ -11,9 +11,7 @@ class CategoriesScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
           title: const Text('Vamos Cozinhar?'),
-          centerTitle: true,
         ),
         body: GridView(
           padding: const EdgeInsets.all(15),

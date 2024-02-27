@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food/components/category_item.dart';
-import 'package:food/data/dummy_data.dart';
+
+import '../data/dummy_data.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
@@ -21,7 +22,7 @@ class CategoriesScreen extends StatelessWidget {
               childAspectRatio: 3 / 2,
               crossAxisSpacing: 20,
               mainAxisSpacing: 20),
-          children: DUMMY_CATEGORIES.map((cat) {
+          children: dummyCategories.map((cat) {
             return CategoryItem(cat);
           }).toList(),
         ),

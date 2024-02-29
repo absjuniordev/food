@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:food/components/category_item.dart';
-
 import '../data/dummy_data.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
-
+ 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return SafeArea( 
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Vamos Cozinhar?'),

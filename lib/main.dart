@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food/screens/Categories_screen.dart';
 import 'package:food/screens/food_details_screen.dart';
+import 'package:food/screens/tabs_screen.dart';
 
 import 'screens/categories_food_screen.dart';
 import 'utils/app_routes.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'DeliMeals',
+      title: 'Vamos Cozinhar?',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
           primary: Colors.pink,
@@ -40,9 +40,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        AppRoutes.HOME: (_) => const CategoriesScreen(),
-        AppRoutes.CATEGORIES_FOOD: (_) => const CategoriesFoodScreen(),
-        AppRoutes.FOOD_DETAIL: (_) => const FoodDetailsScreen(),
+        AppRoutes.HOME: (ctx) => const TabsScreen(),
+        AppRoutes.CATEGORIES_FOOD: (ctx) => const CategoriesFoodScreen(),
+        AppRoutes.FOOD_DETAIL: (ctx) => const FoodDetailsScreen(),
       },
     );
   }

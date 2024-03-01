@@ -79,10 +79,11 @@ class FoodDetailsScreen extends StatelessWidget {
                         leading: CircleAvatar(
                           child: Text('${index + 1}'),
                         ),
-                        title: Text
-                        (food.steps[index]),
+                        title: Text(food.steps[index]),
                       ),
-                      const Divider(color: Colors.black,)
+                      const Divider(
+                        color: Colors.black,
+                      )
                     ],
                   );
                 },
@@ -90,6 +91,12 @@ class FoodDetailsScreen extends StatelessWidget {
             )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.star),
+        onPressed: () {
+          Navigator.of(context).pop(food.title);
+        },
       ),
     );
   }

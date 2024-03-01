@@ -9,18 +9,26 @@ class FoodItem extends StatelessWidget {
   });
 
   final Food food;
-  
+
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(
+    Navigator.of(context)
+        .pushNamed(
       AppRoutes.FOOD_DETAIL,
       arguments: food,
-    );
+    )
+        .then((result) {
+      if (result == null) {
+        print('Sem resultado');
+      } else {
+        print(result);
+      }
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:()=> _selectMeal(context),
+      onTap: () => _selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),

@@ -5,6 +5,7 @@ import '../components/food_item.dart';
 
 class CategoriesFoodScreen extends StatelessWidget {
   const CategoriesFoodScreen({super.key, required this.food});
+
   final List<Food> food;
 
   @override

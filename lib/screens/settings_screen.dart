@@ -15,6 +15,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _createSwitch(
       String title, String subTitle, bool value, Function(bool) onChanged) {
     return SwitchListTile.adaptive(
+      inactiveThumbColor: Colors.white,
+      inactiveTrackColor: Colors.red,
+      activeTrackColor: Colors.green,
       title: Text(title),
       subtitle: Text(subTitle),
       value: value,

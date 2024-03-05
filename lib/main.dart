@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'RobotoCondensed',
               ),
             ),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 252, 249, 249),
         appBarTheme: const AppBarTheme(
           color: Colors.pink,
           centerTitle: true,
